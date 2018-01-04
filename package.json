@@ -1,0 +1,21 @@
+{
+    "name": "doPost",
+    "version": "1.0.0",
+    "description": "Hello Koa 2 example with async",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "keywords": [
+        "koa",
+        "async"
+    ],
+    "dependencies": {
+        "koa": "2.0.0",
+        "koa-router": "7.3.0",
+        "koa-bodyparser": "4.2.0",
+        "nunjucks": "3.0.1",
+        "mime": "2.1.0",
+        "mz": "2.7.0"
+    }
+}

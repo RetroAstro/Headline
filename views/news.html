@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NEWS</title>
+<link rel="stylesheet" type="text/css" href="/static/css/news.css">
+</head>
+<body style="overflow:auto;">
+<div>
+	<div class="toutiao-header">
+		<div class="topbar">
+			<div class="bui-left clearfix">
+				<ul class="nav-list">
+					<li class="bui-left"><a href="#" class="tb-link">推荐</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">热点</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">视频</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">图片</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">段子</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">社会</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">娱乐</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">科技</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">汽车</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">体育</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">财经</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">军事</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">国际</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">时尚</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">旅游</a></li>
+					<li class="bui-left"><div class="tt-dropdown"><a href="#" class="tt-dropdown-link tb-link">更多<img src="/static/img/14.png" style="width:12px;height:10px;margin-left:5px;"></a><ul class="tt-dropdown-menu">
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">探索</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">育儿</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">养生</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">美文</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">游戏</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">历史</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">美食</a></li>
+					</ul></div></li>
+				</ul>
+			</div>
+			<div class="bui-right">
+				<ul class="user-nav-list clearfix">
+					<li class="news-article">
+						<a class="tb-link">发文</a>
+					</li>
+					<li>
+						<div class="tt-dropdown">
+							<div class="tt-dropdown-link tb-link">
+							    <a class="user-name">
+							    	<img src="/static/img/user_avatar.png" class="user-avatar">
+							    	<span class="dxsname">{{username}}</span>
+							    </a>
+							  <ul class="dropdown secondrop" style="position:absolute;left:0;">
+								<li class="drop-menu">
+									<a href="#" class="layer-menu">问答</a>
+								</li>
+								<li class="drop-menu"><a href="#" class="layer-menu">我的收藏</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">我的关注</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">我的粉丝</a></li>
+								<li class="drop-menu"><a href="/" class="layer-menu">退出</a></li>
+							 </ul>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="feedback">
+							<a href="#" class="feedback-text" id="btn">反馈</a>
+						    <div id="Layer" style="display:none;">	
+							<div class="tt-dialog_wrapper" style="z-index:2001;">
+								<div class="tt-dialog tiny" style="top:15%;">
+									<div class="dialog-header">
+										<span class="dialog-title">意见反馈</span>
+										<div class="dialog-closebtn" id="close">&times;</div>
+									</div>
+									<div class="dialog-body">
+										<div class="content">
+											<p class="label">联系方式（必填）</p>
+											<div class="input-group">
+												<input placeholder="您的邮箱/QQ号" type="text" class="email"></input>
+											</div>
+											<p class="label">您的意见（必填）</p>
+											<div class="input-group">
+												<textarea maxlength="140" placeholder="请填写您的意见，不超过140字" class="text"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="dialog-footer">
+										<span class="dilog_fter">
+											<button type="button" class="tt-button tt-button-default" id="cancel">
+												<span>取消</span>
+											</button>
+											<button type="button" class="tt-button submit primary">
+												<span>确认</span>
+											</button>
+										</span>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</li>
+
+					<li><a href="https://www.toutiao.com/complain/" class="tb-link" target="blank">侵权投诉</a></li>
+					<li>
+						<div class="tt-dropdown">
+							<a href="#" class="tt-dropdown-link tb-link">头条产品</a>
+							 <ul class="dropdown">
+								<li class="drop-menu">
+									<a href="#" class="layer-menu">问答</a>
+								</li>
+								<li class="drop-menu"><a href="#" class="layer-menu">头条号</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">图虫</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">正版图库</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">广告投放</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">懂车帝</a></li>
+							</ul>	
+						</div>
+					</li>	
+				</ul>
+			</div>
+		</div>
+		<div class="middlebar">
+			<div class="middlebar-inner clearfix">
+				<div class="bui-left logo-box">
+					<a href="#" class="logo-link">
+						<img src="/static/img/login_one.png" class="logo">
+					</a>
+				</div>
+				<div class="bui-left chinese-tag">
+					<a href="#">首页</a>
+					/
+					<a href="#">育儿</a>
+					/
+					<span class="text2">正文</span>	
+				</div>
+				<div class="bui-right">
+					<div class="search-wrap">
+						<div class="tt-autocomplete">
+						<div class="tt-input tt-input-group tt-input-group--append">
+							<input type="text2" class="tt-input-inner" placeholder="请输入要搜索的内容"
+							 autocomplete="off"></input>
+							<div class="tt-input-group-append">
+								<button type="button" class="tt-buttontwo tt-button-default">
+								<span>搜索</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bui-box container">
+		<div class="bui-left index-left">
+			<div class="share-box">
+				<a href="#" class="share-count">
+				<img src="/static/img/messageboard.png" class="bui-icon">
+				<span>5500</span>
+				</a>
+				<div class="share-hr"></div>
+				<div class="share-type">
+					<img src="/static/img/weibo.png" class="bui-img">
+					<span>微博</span>
+				</div>
+				<div class="share-type">
+					<img src="/static/img/qzone.png" class="bui-img">
+					<span>Qzone</span>
+				</div>
+				<div class="share-type share-weixin">
+					<img src="/static/img/weixin.png" class="bui-img" style="width:38px;height:38px;margin-left:5px;">
+					<span>微信</span>
+				</div>
+			</div>
+		</div>
+		<div class="bui-left index-middle">
+			<div class="article-box">
+				<h1>2018年，愿你遇见更好的自己</h1>
+				<div class="article-sub">
+					<span>美文志</span>
+					<span>2017-12-29 23:39:43</span>
+				</div>
+				<div class="article-content">
+					<p>
+						<img src="/static/img/2018.jpg">
+					</p>
+				</div>
+			</div>
+			<div class="detail-comment">
+				<div class="comment">
+					<div class="c-header">
+						<em>904&nbsp;</em>条评论
+					</div>
+					<div class="inputBox">
+						<div class="bui-box">
+							<div class="avatar-wrap avatar-wrap-center"></div>
+							<div class="input-wrap focus">
+								<div class="c-textarea">
+									<textarea placeholder="写下您的评论..." id="TEXTAREA"></textarea>
+								</div>
+								<div class="c-action">
+									<div class="c-submit">评论</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul style="margin-top:25px;" id="comments">
+						<li class="c-item">
+							<a href="#" class="avatar-wrap"></a>
+							<div class="c-content">
+								<div class="c-user-info">
+									<a href="#" class="c-user-name">RetroAstro</a>
+									<span>20 HoursBefore...</span>
+								</div>
+								<p>我大学同学，男生，纯新疆人，他说迪丽热巴在新疆真的是大美女，他说新疆浓眉大眼高鼻梁的确实多，但是真长的像热巴那么美的不多，他说古力娜扎都缺少新疆特色了，看不出来是新疆人了都，没有热巴好看，我问那你觉得女明星谁最美，他说高圆圆</p>
+								<div class="c-footer-action">
+									<span class="c-reply">回复</span>
+									<span class="c-reply-count">&nbsp;~&nbsp;118条回复</span>
+									<span title="点赞" class="bui-right c-digg">
+									<span id="LikeWrap"><span class="LiNu">1188</span>&nbsp;</span><img src="/static/img/likegrey.png" class="like"></span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bui-right index-right">
+			<div class="pane-module">
+				<div class="user-card">
+					<div class="user-card-head">
+						<a href="#" class="user-card-avatar"><img src="/static/img/16.jpg"></a>
+						<div class="user-card-name">
+							<a href="#">寻舍精品</a>
+							<div class="subscribe">
+								<div class="left-arrow subscribe-btn">
+									<span style="vertical-align:middle;">关注</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="user-card-article-list">
+						<li class="user-card-article-item"><a href="#">当初写下“世界那么大我想去看看”的女教师，如今活成这般模样！</a></li>
+						<li class="user-card-article-item"><a href="#">当初写下“世界那么大我想去看看”的女教师，如今活成这般模样！</a></li>
+						<li class="user-card-article-item"><a href="#">当初写下“世界那么大我想去看看”的女教师，如今活成这般模样！</a></li>
+						<li class="user-card-article-item"><a href="#">当初写下“世界那么大我想去看看”的女教师，如今活成这般模样！</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bui-toast is-placemiddle">
+		<span class="bui-toast-text">评论不能为空！</span>
+	</div>
+</div>
+</body>
+<script src="/static/js/news.js"></script>
+</html>

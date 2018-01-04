@@ -1,0 +1,220 @@
+body{
+	 background-repeat:no-repeat;
+	 background-position:top center;
+}
+.wrap{
+	width:100%;
+	height:100%;
+}
+.content{
+	position:relative;
+	width:100%;
+	height:100%;
+	background-color:#eee;
+}
+.logo-wrap{
+	display:inline-block;
+	position:absolute;
+	top:16px;
+	left:16px;
+	width:110px;
+	height:27px;
+}
+.logo-wrap>img{
+	width:100%;
+	height:100%;
+}
+.slogan-wrap{
+	position:absolute;
+	left:49%;
+	margin-left:-275px;
+	top:10px;
+	width:550px;
+	height:385px;
+}
+.slogan-wrap>img{
+	width:100%;
+	height:100%;
+}
+.login-box{
+	position:absolute;
+	top:230px;
+	left:49%;
+	margin-left:-200px;
+	width:300px;
+	padding:28px 50px 38px;
+	background-color:rgba(255,255,255,.9);
+}
+.baselogin{
+	position:relative;
+}
+input{
+	border:0;
+	outline:0;
+}
+.input-field{
+	position:relative;
+	font-size:16px;
+	margin-bottom:8px;
+	color:#666;
+}
+.input-field>input{
+	width:282px;
+	line-height:32px;
+	height:32px;
+	padding:4px 8px;
+	border:1px solid #ddd;
+	z-index:1
+}
+.verification>input{
+	width:170px;
+	padding-right:120px;
+}
+.captcha{
+	position:absolute;
+	top:1px;
+	right:1px;
+	width:102px;
+	height:40px;
+}
+.code{
+	display:inline-block;
+	width:102px;
+	height:40px;
+	cursor:pointer;
+	background:#fff;
+	color:orange;
+	letter-spacing:2px;
+	font-size:16px;
+	font-weight:bold;
+}
+.frame{
+	display:none;
+	position:absolute;
+	top:-35px;
+	right:-9px;
+	background:#444;
+	width:115px;
+	height:30px;
+	text-align:center;
+	font-size:13px;
+	color:#fff;
+	line-height:26px;
+	padding:0 2px;
+}
+.tips-bubble{
+	position:relative;
+	z-index:1;
+}
+.triangle{
+	width:20px;
+	height:20px;
+	display:inline-block;
+	position:absolute;
+	bottom:-10px;
+	right:50px;
+	background:#444;
+	transform:rotate(225deg);
+}
+.captcha:hover .frame{
+	display:block;
+}
+.phone-code>input{
+	width:170px;
+	padding-right:120px;
+}
+.code-btn{
+	position:absolute;
+	top:0;
+	right:0;
+	color:#406599;
+	cursor:pointer;
+	font-size:16px;
+	width:80px;
+	height:42px;
+	line-height:42px;
+	padding:0 16px;
+	text-align:center;
+}
+.code-btn::before{
+	content:"";
+	position:absolute;
+	left:0;
+	top:4px;
+	height:34px;
+	width:0.5px;
+	background:#ddd;
+}
+.action{
+	font-size:13px;
+	color:#222;
+	margin-top:4px;
+	margin-bottom:24px;
+}
+.action>input,.action>label{
+	vertical-align:middle;
+	line-height:18px;
+}
+.action-btn{
+	color:#fff;
+	font-size:18px;
+	line-height:42px;
+	width:300px;
+	text-align:center;
+	background:#f85959;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+.action::after{
+	content:"";
+	height:0px;
+    display:block;
+    clear:both;
+    overflow:hidden;
+}
+.error-msg{
+	display:none;
+	position:absolute;
+	top:-48px;
+	font-size:14px;
+	line-height:14px;
+	height:14px;
+	color:#666;
+	width:274px;
+	padding:12px;
+	border:1px solid #f85959;
+	background-color:#fff1f1;
+	z-index:10;
+}
+.error-msg>i{
+    font-size:14px;
+    color:#f85959;
+}
+.y-icon {
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    width:14px;
+    height:13.6px;
+}
+
+.error-msg>.icon-clearicon {
+    color: #666;
+    cursor: pointer;
+}
+.error-msg .y-right {
+    float: right;
+}
+
+.ivco{
+	width:100%;
+	height:100%;
+}
+.ErrorShow{
+	display:block;
+}
+.ErrorHide{
+	display:none;
+}

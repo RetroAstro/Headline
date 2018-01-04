@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>《今日头条》 你关心的，才是头条！-www.toutiao.com</title>
+<link rel="stylesheet" type="text/css" href="/static/css/login.css">
+</head>
+<body background="/static/img/login_four.png">
+<div class="wrap">
+	<div class="content">
+		<a class="logo-wrap" href="#"><img src="/static/img/login_one.png"></a>
+		<div class="slogan-wrap">
+			<img src="/static/img/login_two.png">
+		</div>
+		<div class="login-box">
+			<div class="baseLogin">
+			  <div class="error-msg">
+			    <i class="y-icon icon-errormessage">
+			    	<img src="/static/img/minus.png" class="ivco">
+			    </i>
+			      <span id="coderror">您输入的信息不完整</span>
+			  	<i class="y-right y-icon icon-clearicon">
+			  		<img src="/static/img/close.png" class="ivco">
+			  	</i>
+			  </div>
+				<form action="#" method="#">
+				    <div class="input-field">
+				    	<input type="text" placeholder="请设置用户名" id="username" maxlength="12"></input>
+				    </div>
+				    <div class="input-field verification">
+				    	<input type="text" placeholder="请输入验证码" id="precode"></input>
+				    	<div class="captcha"><input type="button" id="checkCode" class="code" onclick="createCode()"></input>
+				    	<div class="frame"><span class="tips-bubble">看不清楚？换一张</span><span class="triangle"></span></div></div>
+				    </div>
+				    <div class="input-field phone-code">
+				    	<input type="password" placeholder="请设置登录密码" id="password" maxlength="15"></input>
+				    </div>
+				    <div class="action">
+				    	<input type="checkbox" checked="checked"></input>
+				    	<label>我已阅读并同意<a href="#">用户协议与隐私条款</a></label>
+				    </div>
+				    <div class="action-btn">注册</div>
+				</form>
+				<img src="/static/img/login_six.png" style="width:300px;height:90px;cursor:pointer;">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="/static/js/login.js"></script>
+</html>

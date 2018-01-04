@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Selfinfo</title>
+<link rel="stylesheet" type="text/css" href="/static/css/Self.css">
+</head>
+<body>
+<div class="y-wrap">
+	<div class="toutiao-header">
+		<div class="topbar">
+			<div class="bui-left clearfix">
+				<ul class="nav-list">
+					<li class="bui-left"><a href="#" class="tb-link">推荐</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">热点</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">视频</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">图片</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">段子</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">社会</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">娱乐</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">科技</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">汽车</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">体育</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">财经</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">军事</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">国际</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">时尚</a></li>
+					<li class="bui-left"><a href="#" class="tb-link">旅游</a></li>
+					<li class="bui-left"><div class="tt-dropdown"><a href="#" class="tt-dropdown-link tb-link">更多<img src="/static/img/14.png" style="width:12px;height:10px;margin-left:5px;"></a><ul class="tt-dropdown-menu">
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">探索</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">育儿</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">养生</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">美文</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">游戏</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">历史</a></li>
+						<li class="tt-dropdown-menu_item"><a href="#" class="tb-link">美食</a></li>
+					</ul></div></li>
+				</ul>
+			</div>
+			<div class="bui-right">
+				<ul class="user-nav-list clearfix">
+					<li>
+						<div class="tt-dropdown">
+							<div class="tt-dropdown-link tb-link">
+							    <a href="#" class="user-name">
+							    	<img src="/static/img/user_avatar.png" class="user-avatar">
+							    	<span class="dxsname">{{username}}</span>
+							    </a>
+							  <ul class="dropdown secondrop" style="position:absolute;left:0;">
+								<li class="drop-menu">
+									<a href="#" class="layer-menu">问答</a>
+								</li>
+								<li class="drop-menu"><a href="#" class="layer-menu">我的收藏</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">我的关注</a></li>
+								<li class="drop-menu"<a href="#" class="layer-menu">我的粉丝</a></li>
+								<li class="drop-menu"><a href="/" class="layer-menu">退出</a></li>
+							 </ul>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="feedback">
+							<a href="#" class="feedback-text" id="btn">反馈</a>
+						    <div id="Layer" style="display:none;">	
+							<div class="tt-dialog_wrapper" style="z-index:2001;">
+								<div class="tt-dialog tiny" style="top:15%;">
+									<div class="dialog-header">
+										<span class="dialog-title">意见反馈</span>
+										<div class="dialog-closebtn" id="close">&times;</div>
+									</div>
+									<div class="dialog-body">
+										<div class="content">
+											<p class="label">联系方式（必填）</p>
+											<div class="input-group">
+												<input placeholder="您的邮箱/QQ号" type="text" class="email"></input>
+											</div>
+											<p class="label">您的意见（必填）</p>
+											<div class="input-group">
+												<textarea maxlength="140" placeholder="请填写您的意见，不超过140字" class="text"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="dialog-footer">
+										<span class="dilog_fter">
+											<button type="button" class="tt-button tt-button-default" id="cancel">
+												<span>取消</span>
+											</button>
+											<button type="button" class="tt-button submit primary">
+												<span>确认</span>
+											</button>
+										</span>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</li>
+
+					<li><a href="https://www.toutiao.com/complain/" class="tb-link" target="blank">侵权投诉</a></li>
+					<li>
+						<div class="tt-dropdown">
+							<a href="#" class="tt-dropdown-link tb-link">头条产品</a>
+							 <ul class="dropdown">
+								<li class="drop-menu">
+									<a href="#" class="layer-menu">问答</a>
+								</li>
+								<li class="drop-menu"><a href="#" class="layer-menu">头条号</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">图虫</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">正版图库</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">广告投放</a></li>
+								<li class="drop-menu"><a href="#" class="layer-menu">懂车帝</a></li>
+							</ul>	
+						</div>
+					</li>	
+				</ul>
+			</div>
+		</div>
+		<div class="middlebar">
+			<div class="middlebar-inner clearfix">
+				<div class="bui-left logo-box">
+					<a href="#" class="logo-link">
+						<img src="/static/img/login_one.png" class="logo">
+					</a>
+				</div>
+				<div class="bui-right">
+					<div class="search-wrap">
+						<div class="tt-autocomplete">
+						<div class="tt-input tt-input-group tt-input-group--append">
+							<input type="text2" class="tt-input-inner" placeholder="请输入关键字"
+							 autocomplete="off"></input>
+							<div class="tt-input-group-append">
+								<button type="button" class="tt-buttontwo tt-button-default">
+								<span>搜索</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div class="yheader">
+			<a href="#">
+				<img src="/static/img/bctoutiao.png" class="bg-header">
+			</a>
+			<div>
+				<a>
+					<img src="/static/img/user_avatar.png" class="avatar">
+				</a>
+				<ul>
+					<li class="title">
+						<a href="#">
+							<span class="name">{{username}}</span>
+						</a>
+					</li>
+				</ul>
+				<span class="btn-publish">
+					<span>发布微头条</span>
+				</span>
+			</div>
+		</div>
+		<div class="left">
+			<div>
+				<ul class="tab">
+					<li class="active">视频</li>
+					<li>微头条</li>
+					<li>收藏</li>
+				</ul>
+			</div>
+			<div>
+				<div class="feedBox">
+					<div class="relatedFeed">
+						<ul>
+						    <li class="empty">
+								暂无内容
+							</li>
+						    <li class="empty hide" id="Secondinsert">
+						        <span id="Dishide">暂无内容</span>
+						    </li>	
+						    <li class="empty hide">
+								暂无内容
+							</li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div>
+				<dl class="statistics">
+					<dt>
+						<a href="#">
+							<h3>0</h3>
+							<p>关注</p>
+						</a>
+					</dt>
+					<dd>
+					    <a href="#">
+					    	<h3>0</h3>
+					    	<p>粉丝</p>
+					    </a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="top">
+			<span class="topspan"><a href="#"><img src="/static/img/topredarrow.png"></a></span>
+		</div>
+	</div>
+	<div class="ugcBox">
+		<div class="ugcBox-inner">
+			<ul class="y-box ugc-tab-list">
+				<li class="ugc-tab-item active">发布图文</li>
+				<li class="ugc-tab-item">发布视频</li>
+			</ul>
+			<span class="ugc-close">
+				<span>&times;</span>
+			</span>
+			<div class="ugc-content">
+				<div class="imgBox">
+					<textarea class="title-input" placeholder="请输入内容"></textarea>
+					<div class="differ">
+					<input type="text" placeholder="请输入标题(30字以内)" class="title-input hide"></input>
+					</div>
+					<div class="imgUploadBox">
+						<div class="y-box upload-box">
+							<ul class="upload-img-list">
+								<li class="upload-img-item upload-img-add"></li>
+								<li class="upload-tips">支持绝大多数的图片格式，单张图片大小不超过10M，请勿上传反动色情等违法图片。</li>
+							</ul>
+						</div>
+					</div>
+					<div class="y-box upload-footer">
+						<div class="upload-action">
+							<a href="#" class="upload-backend">后台上传</a>
+							<a href="#" class="upload-publish">发布</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div>
+			<span class="fitem">© 2017 今日头条 </span>
+			<a href="#" class="fitem">中国互联网举报中心</a>
+			<a href="#" class="fitem">京ICP备12025439号-3</a>
+			<a href="#" class="fitem">京公网安备 11000002002023号</a>
+		</div>
+		<div>	
+			<a href="#" class="fitem">网络文化经营许可证</a>
+			<a href="#" class="fitem">跟帖评论自律管理承诺书</a>
+			<span class="fitem">违法和不良信息举报电话：010-58341833</span>
+			<span class="fitem">公司名称：北京字节跳动科技有限公司</span>
+		</div>
+	</div>
+	<div class="bui-toast is-placemiddle" style="opacity:0;">
+		<span class="bui-toast-text">已删除</span>
+	</div>
+</div>
+</body>
+<script src = "/static/js/Selfinfo.js"></script>
+</html>

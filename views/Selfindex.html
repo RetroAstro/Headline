@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>今日头条</title>
+<link rel="stylesheet" type="text/css" href="/static/css/Selfindex.css">
+</head>
+<body>
+<div>
+	<div class="header">
+		<div class="topbar">
+			<div class="bui-left clearfix">
+				<a href="#" target="_blank" class="download-app tb-link">下载APP</a>
+				<div class="weather-tool">
+					<div class="weather-abstract">
+						<span>&nbsp;北京</span>
+						<span class="city_state">晴</span>
+						<span class="city_temperature">
+							<em>0</em>
+							° &nbsp;/&nbsp;<em>11</em> ° 
+						</span>
+					</div>
+					<div class="y-weather">
+						<div class="w-header">
+							<span class="bui-icon icon-locationweather bui-vm">&nbsp;北京</span>
+							<span class="wind bui-vm">静风0级</span>
+							<span class="air vm" style="background-color:rgb(92,191,76);">良&nbsp;90</span>
+						</div>
+						<ul class="days-weather">
+							<li class="bui-left day">
+								<span class="title2">今天</span>
+								<div class="weather-icon weather-icon-30" title="晴"></div>
+								<span class="temperature">
+									<em>0</em>
+									° /
+									<em>11</em>
+									°
+								</span>
+							</li>
+							<li class="bui-left day">
+								<span class="title2">明天</span>
+								<div class="weather-icon weather-icon-0" title="晴"></div>
+								<span class="temperature">
+									<em>0</em>
+									° /
+									<em>12</em>
+									°
+								</span>
+							</li>
+							<li class="bui-left day">
+								<span class="title2">后天</span>
+								<div class="weather-icon weather-icon-0" title="晴"></div>
+								<span class="temperature">
+									<em>-4</em>
+									° /
+									<em>8</em>
+									°
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bui-right">
+				<ul class="user-nav-list clearfix">
+					<li class="news-article"><a href="#" class="tb-link">发文</a>
+					</li>
+					<li>
+						<div class="feedback">
+							<a href="#" class="feedback-text" id="btn">反馈</a>
+						    <div id="Layer" style="display:none;">	
+							<div class="tt-dialog_wrapper" style="z-index:2001;">
+								<div class="tt-dialog tiny" style="top:15%;">
+									<div class="dialog-header">
+										<span class="dialog-title">意见反馈</span>
+										<div class="dialog-closebtn" id="close">&times;</div>
+									</div>
+									<div class="dialog-body">
+										<div class="content">
+											<p class="label">联系方式（必填）</p>
+											<div class="input-group">
+												<input placeholder="您的邮箱/QQ号" type="text" class="email"></input>
+											</div>
+											<p class="label">您的意见（必填）</p>
+											<div class="input-group">
+												<textarea maxlength="140" placeholder="请填写您的意见，不超过140字" class="text"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="dialog-footer">
+										<span class="dilog_fter">
+											<button type="button" class="tt-button tt-button-default" id="cancel">
+												<span>取消</span>
+											</button>
+											<button type="button" class="tt-button submit primary">
+												<span>确认</span>
+											</button>
+										</span>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="https://www.toutiao.com/complain/" class="tb-link" target="blank">侵权投诉</a></li>
+					<li>
+						<div class="tt-dropdown">
+							<a href="#" class="tt-dropdown-link tb-link">头条产品</a>
+							 <ul class="dropdown">
+									<li class="drop-menu">
+										<a href="#" class="layer-menu">问答</a>
+									</li>
+									<li class="drop-menu"><a href="#" class="layer-menu">头条号</a></li>
+									<li class="drop-menu"><a href="#" class="layer-menu">图虫</a></li>
+									<li class="drop-menu"<a href="#" class="layer-menu">正版图库</a></li>
+									<li class="drop-menu"><a href="#" class="layer-menu">广告投放</a></li>
+									<li class="drop-menu"><a href="#" class="layer-menu">懂车帝</a></li>
+								</ul>	
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="bui-box container">
+		<div class="bui-left index-channel">
+			<div>
+				<div class="channel">
+					<a href="#" class="a-logo">
+						<img src="/static/img/logo_two.png" style="width:108px;height:27px;">
+					</a>
+					<ul class="move-left">
+						<li><a href="#" class="channel-item active" id="sour"><span>推荐</span></a></li>
+						<li><a href="#" class="channel-item active"><span>热点</span></a></li>
+						<li><a href="#" class="channel-item active"><span>西瓜视频</span></a></li>
+						<li><a href="#" class="channel-item active"><span>图片</span></a></li>
+						<li><a href="#" class="channel-item active"><span>科技</span></a></li>
+						<li><a href="#" class="channel-item active"><span>社会</span></a></li>
+						<li><a href="#" class="channel-item active"><span>娱乐</span></a></li>
+						<li><a href="#" class="channel-item active"><span>游戏</span></a></li>
+						<li><a href="#" class="channel-item active"><span>体育</span></a></li>
+						<li><a href="#" class="channel-item active"><span>汽车</span></a></li>
+						<li><a href="#" class="channel-item active"><span>财经</span></a></li>
+						<li><a href="#" class="channel-item active"><span>搞笑</span></a></li>
+						<li id="more"><a href="#" class="channel-item active"><span>更多</span></a>
+                        <div class="channel-more-layer">
+                        	<ul class="bui-box">
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>国际</span></a></li>
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>时尚</span></a></li>
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>旅游</span></a></li>
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>探索</span></a></li>
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>育儿</span></a></li>
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>养生</span></a></li>
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>美文</span></a></li>
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>历史</span></a></li>
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>段子</span></a></li>
+                        		<li class="bui-left"><a href="#" class="channel-item"><span>美食</span></a></li>
+                        	</ul>
+                        </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bui-left index-content" id="stop">
+			<div class="ugcBox">
+				<div class="ugcBox-inner">
+					<ul class="bui-box ugc-tab-list">
+						<li class="bui-left ugc-tab-item current">发布图文</li>
+						<li class="bui-left ugc-tab-item">发布视频</li>
+						<li class="bui-left ugc-tab-item">发布问答</li>
+					</ul>
+					<div class="ugc-content">
+						<div>
+							<div class="imgBox upload-box">
+								<textarea placeholder="有什么新鲜事想告诉大家" class="title-input" id="pubself"></textarea>
+								<p class="words-number"><span id="Textnumber">0</span>/2000字</p>
+								<div class="bui-box upload-footer">
+									<div class="bui-left">
+										<span class="show-uploader">
+										    <img src="/static/img/tinypic.png" class="tinypic">
+											<span style="vertical-align:middle;">添加图片</span>
+										</span>
+										<span class="checkbox-wrap">
+											<span>发布长文</span>
+										</span>
+									</div>
+									<div class="bui-right">
+									    <span class="msg-tip">请输入内容</span>
+										<a class="upload-publish">发布</a>
+									</div>
+								</div>
+							</div>
+							<div class="videoBox upload-box hide">
+							    <textarea placeholder="视频标题(30字以内)" class="title-input"></textarea>
+								<p class="words-number">0/30字</p>
+								<div class="bui-box upload-footer">
+									<div class="bui-left">
+										<span class="show-uploader">
+											<span>添加视频</span>
+										</span>
+									</div>
+									<div class="bui-right">
+										<a class="upload-publish">发布</a>
+									</div>
+								</div>
+							</div>
+							<div class="wendaBox upload-box hide">
+								<input type="text" placeholder="请输入问题标题(4-40字)" class="wenda-title-input wenda-input"></input>
+								<textarea placeholder="添加问题背景描述(选填,0-40字)" class="wenda-content-input wenda-input"></textarea>
+								<p class="words-number">0/40字</p>
+								<div class="bui-box upload-footer">
+									<div class="bui-left">
+										<span class="show-uploader">
+											<span>添加图片</span>
+										</span>
+										<span class="checkbox-wrap">
+											<span>更多问答</span>
+										</span>
+									</div>
+									<div class="bui-right">
+										<a class="upload-publish">发布</a>
+									</div>
+								</div>
+							</div>
+						</div>					
+					</div>
+			</div>
+		</div>
+	    <div class="feed-infinite-wrapper">
+	         	<div class="loading ball-pulse">
+	         		<div></div>
+	         		<div></div>
+	         		<div></div>
+	         		<span>推荐中...</span>
+	         	</div>
+	         	<div>
+	         		<div class="msg-alert msg-alert-hidden">
+	         			<span>为您推荐了7篇文章</span>
+	         		</div>
+	         	</div>
+	         	<ul class="infinite-ul">
+	         		<li>
+	         			<div class="bui-box single-mode">
+	         				<div class="bui-left single-mode-lbox">
+	         					<a href="#" class="img-wrap">
+	         						<img src="/static/img/10.jpg" class="lazy-load-img">
+	         					</a>
+	         				</div>
+	         				<div class="single-mode-rbox">
+	         					<div class="single-mode-rbox-inner">
+	         						<div class="title-box"><a href="#" class="link">姚明女儿穿着朴素被王诗龄叫“农村娃”，金星霸气怒怼，打脸李湘</a></div>
+	         						<div class="bui-box footer-bar">
+	         							<div class="bui-left footer-bar-left">
+	         							<a href="#" class="footer-bar-action action-tag">体育</a>
+	         							<a href="#" class="footer-bar-action media-avatar"><img src="/static/img/11.jpg"></a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;虾扯娱乐&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;491评论&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;47分钟前</a>
+	         							</div>
+	         							<div class="bui-right">
+	         								<div class="action-dislike">
+	         									<i class="bui-icon icon-close_small">&times;</i>不感兴趣
+	         								</div>
+	         							</div>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+	         		</li>
+	         		<li>
+	         			<div class="bui-box single-mode">
+	         				<div class="bui-left single-mode-lbox">
+	         					<a href="#" class="img-wrap">
+	         						<img src="/static/img/10.jpg" class="lazy-load-img">
+	         					</a>
+	         				</div>
+	         				<div class="single-mode-rbox">
+	         					<div class="single-mode-rbox-inner">
+	         						<div class="title-box"><a href="#" class="link">姚明女儿穿着朴素被王诗龄叫“农村娃”，金星霸气怒怼，打脸李湘</a></div>
+	         						<div class="bui-box footer-bar">
+	         							<div class="bui-left footer-bar-left">
+	         							<a href="#" class="footer-bar-action action-tag">体育</a>
+	         							<a href="#" class="footer-bar-action media-avatar"><img src="/static/img/11.jpg"></a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;虾扯娱乐&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;491评论&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;47分钟前</a>
+	         							</div>
+	         							<div class="bui-right">
+	         								<div class="action-dislike">
+	         									<i class="bui-icon icon-close_small">&times;</i>不感兴趣
+	         								</div>
+	         							</div>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+	         		</li>
+	         		<li>
+	         			<div class="bui-box single-mode">
+	         				<div class="bui-left single-mode-lbox">
+	         					<a href="#" class="img-wrap">
+	         						<img src="/static/img/10.jpg" class="lazy-load-img">
+	         					</a>
+	         				</div>
+	         				<div class="single-mode-rbox">
+	         					<div class="single-mode-rbox-inner">
+	         						<div class="title-box"><a href="#" class="link">姚明女儿穿着朴素被王诗龄叫“农村娃”，金星霸气怒怼，打脸李湘</a></div>
+	         						<div class="bui-box footer-bar">
+	         							<div class="bui-left footer-bar-left">
+	         							<a href="#" class="footer-bar-action action-tag">体育</a>
+	         							<a href="#" class="footer-bar-action media-avatar"><img src="/static/img/11.jpg"></a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;虾扯娱乐&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;491评论&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;47分钟前</a>
+	         							</div>
+	         							<div class="bui-right">
+	         								<div class="action-dislike">
+	         									<i class="bui-icon icon-close_small">&times;</i>不感兴趣
+	         								</div>
+	         							</div>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+	         		</li>
+	         		<li>
+	         			<div class="bui-box single-mode">
+	         				<div class="bui-left single-mode-lbox">
+	         					<a href="#" class="img-wrap">
+	         						<img src="/static/img/10.jpg" class="lazy-load-img">
+	         					</a>
+	         				</div>
+	         				<div class="single-mode-rbox">
+	         					<div class="single-mode-rbox-inner">
+	         						<div class="title-box"><a href="#" class="link">姚明女儿穿着朴素被王诗龄叫“农村娃”，金星霸气怒怼，打脸李湘</a></div>
+	         						<div class="bui-box footer-bar">
+	         							<div class="bui-left footer-bar-left">
+	         							<a href="#" class="footer-bar-action action-tag">体育</a>
+	         							<a href="#" class="footer-bar-action media-avatar"><img src="/static/img/11.jpg"></a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;虾扯娱乐&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;491评论&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;47分钟前</a>
+	         							</div>
+	         							<div class="bui-right">
+	         								<div class="action-dislike">
+	         									<i class="bui-icon icon-close_small">&times;</i>不感兴趣
+	         								</div>
+	         							</div>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+	         		</li>
+	         		<li>
+	         			<div class="bui-box single-mode">
+	         				<div class="bui-left single-mode-lbox">
+	         					<a href="#" class="img-wrap">
+	         						<img src="/static/img/10.jpg" class="lazy-load-img">
+	         					</a>
+	         				</div>
+	         				<div class="single-mode-rbox">
+	         					<div class="single-mode-rbox-inner">
+	         						<div class="title-box"><a href="#" class="link">姚明女儿穿着朴素被王诗龄叫“农村娃”，金星霸气怒怼，打脸李湘</a></div>
+	         						<div class="bui-box footer-bar">
+	         							<div class="bui-left footer-bar-left">
+	         							<a href="#" class="footer-bar-action action-tag">体育</a>
+	         							<a href="#" class="footer-bar-action media-avatar"><img src="/static/img/11.jpg"></a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;虾扯娱乐&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;491评论&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;47分钟前</a>
+	         							</div>
+	         							<div class="bui-right">
+	         								<div class="action-dislike">
+	         									<i class="bui-icon icon-close_small">&times;</i>不感兴趣
+	         								</div>
+	         							</div>
+	         						</div>
+                                </div>
+	         				</div>
+	         			</div>
+	         		</li>
+	         		<li>
+	         			<div class="bui-box single-mode">
+	         				<div class="bui-left single-mode-lbox">
+	         					<a href="#" class="img-wrap">
+	         						<img src="/static/img/10.jpg" class="lazy-load-img">
+	         					</a>
+	         				</div>
+	         				<div class="single-mode-rbox">
+	         					<div class="single-mode-rbox-inner">
+	         						<div class="title-box"><a href="#" class="link">姚明女儿穿着朴素被王诗龄叫“农村娃”，金星霸气怒怼，打脸李湘</a></div>
+	         						<div class="bui-box footer-bar">
+	         							<div class="bui-left footer-bar-left">
+	         							<a href="#" class="footer-bar-action action-tag">体育</a>
+	         							<a href="#" class="footer-bar-action media-avatar"><img src="/static/img/11.jpg"></a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;虾扯娱乐&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;491评论&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;47分钟前</a>
+	         							</div>
+	         							<div class="bui-right">
+	         								<div class="action-dislike">
+	         									<i class="bui-icon icon-close_small">&times;</i>不感兴趣
+	         								</div>
+	         							</div>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+	         		</li>
+	         		<li>
+	         			<div class="bui-box single-mode">
+	         				<div class="bui-left single-mode-lbox">
+	         					<a href="#" class="img-wrap">
+	         						<img src="/static/img/10.jpg" class="lazy-load-img">
+	         					</a>
+	         				</div>
+	         				<div class="single-mode-rbox">
+	         					<div class="single-mode-rbox-inner">
+	         						<div class="title-box"><a href="#" class="link">姚明女儿穿着朴素被王诗龄叫“农村娃”，金星霸气怒怼，打脸李湘</a></div>
+	         						<div class="bui-box footer-bar">
+	         							<div class="bui-left footer-bar-left">
+	         							<a href="#" class="footer-bar-action action-tag">体育</a>
+	         							<a href="#" class="footer-bar-action media-avatar"><img src="/static/img/11.jpg"></a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;虾扯娱乐&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;491评论&nbsp; ⋅</a>
+	         							<a href="#" class="footer-bar-action source"> &nbsp;47分钟前</a>
+	         							</div>
+	         							<div class="bui-right">
+	         								<div class="action-dislike">
+	         									<i class="bui-icon icon-close_small">&times;</i>不感兴趣
+	         								</div>
+	         							</div>
+	         						</div>
+	         					</div>
+	         				</div>
+	         			</div>
+	         		</li>
+	         	</ul>
+	         </div>
+		</div>
+		<div class="bui-right index-right-bar">
+			<div>
+				<div class="search-wrap">
+					<div class="tt-autocomplete">
+						<div class="tt-input tt-input-group tt-input-group--append">
+							<input type="text" class="tt-input-inner" placeholder="请输入要搜索的内容"
+							 autocomplete="off"></input>
+							<div class="tt-input-group-append">
+								<button type="button" class="tt-buttontwo tt-button-default">
+								<span>搜索</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="outer">
+						<div class="logged inner">
+							<div class="top">
+								<p class="logout">
+									<a href="/">
+										<span>退出登录</span>
+									</a>
+								</p>
+								<div>
+									<a href="#">
+										<img src="/static/img/user_avatar.png" class="head">
+									</a>
+									<p class="name">
+										<span>{{ username }}</span>
+									</p>
+								</div>
+							</div>
+							<ul class="bottom">
+								<li>
+									<p class="num">0</p>
+									<br>
+									<p class="word">关注</p>
+								</li>
+								<li class="line"></li>
+								<li>
+									<p class="num">0</p>
+									<br>
+									<p class="word">粉丝</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="news-stuct bui-box">
+					<div id="hotNewsWrap" class="bui-box">
+						<div class="pane-module">
+							<div class="module-head">24小时新闻</div>
+							<ul class="module-content article-list">
+								<li class="article-item">
+									<a href="#" class="news-link">
+										<div class="module-pic news-pic">
+											<img src="/static/img/12.jpg" alt="Be prepared...">
+										</div>
+										<div class="news-inner">
+											<p class="module-title"> 美国正式反对中国市场经济地位 外交部：某些国家在混淆视听</p>
+										</div>
+									</a>
+								</li>
+								<li class="article-item">
+									<a href="#" class="news-link">
+										<div class="module-pic news-pic">
+											<img src="/static/img/12.jpg" alt="Be prepared...">
+										</div>
+										<div class="news-inner">
+											<p class="module-title"> 美国正式反对中国市场经济地位 外交部：某些国家在混淆视听</p>
+										</div>
+									</a>
+								</li>
+								<li class="article-item">
+									<a href="#" class="news-link">
+										<div class="module-pic news-pic">
+											<img src="/static/img/12.jpg" alt="Be prepared...">
+										</div>
+										<div class="news-inner">
+											<p class="module-title"> 美国正式反对中国市场经济地位 外交部：某些国家在混淆视听</p>
+										</div>
+									</a>
+								</li>
+								<li class="article-item">
+									<a href="#" class="news-link">
+										<div class="module-pic news-pic">
+											<img src="/static/img/12.jpg" alt="Be prepared...">
+										</div>
+										<div class="news-inner">
+											<p class="module-title"> 美国正式反对中国市场经济地位 外交部：某些国家在混淆视听</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="pane-module">
+					<div class="module-head">热门视频</div>
+					<ul class="module-content video-list">
+						<li class="video-item"><a href="#" class="link"><dl><dt class="module-pic"><img src="/static/img/13.jpg" alt="Be prepared..."></dt><dd><div class="cell"><h4>黄海波道入狱真相，加害者真面目暴露，王杰也坐不住了</h4><p><span>2478次播放&nbsp;</span><span>&nbsp;21评论</span></p></div></dd></dl></a></li>
+						<li class="video-item"><a href="#" class="link"><dl><dt class="module-pic"><img src="/static/img/13.jpg" alt="Be prepared..."></dt><dd><div class="cell"><h4>黄海波道入狱真相，加害者真面目暴露，王杰也坐不住了</h4><p><span>2478次播放&nbsp;</span><span>&nbsp;21评论</span></p></div></dd></dl></a></li>
+						<li class="video-item"><a href="#" class="link"><dl><dt class="module-pic"><img src="/static/img/13.jpg" alt="Be prepared..."></dt><dd><div class="cell"><h4>黄海波道入狱真相，加害者真面目暴露，王杰也坐不住了</h4><p><span>2478次播放&nbsp;</span><span>&nbsp;21评论</span></p></div></dd></dl></a></li>
+						<li class="video-item"><a href="#" class="link"><dl><dt class="module-pic"><img src="/static/img/13.jpg" alt="Be prepared..."></dt><dd><div class="cell"><h4>黄海波道入狱真相，加害者真面目暴露，王杰也坐不住了</h4><p><span>2478次播放&nbsp;</span><span>&nbsp;21评论</span></p></div></dd></dl></a></li>
+						<li class="video-item"><a href="#" class="link"><dl><dt class="module-pic"><img src="/static/img/13.jpg" alt="Be prepared..."></dt><dd><div class="cell"><h4>黄海波道入狱真相，加害者真面目暴露，王杰也坐不住了</h4><p><span>2478次播放&nbsp;</span><span>&nbsp;21评论</span></p></div></dd></dl></a></li>
+						<li class="video-item"><a href="#" class="link"><dl><dt class="module-pic"><img src="/static/img/13.jpg" alt="Be prepared..."></dt><dd><div class="cell"><h4>黄海波道入狱真相，加害者真面目暴露，王杰也坐不住了</h4><p><span>2478次播放&nbsp;</span><span>&nbsp;21评论</span></p></div></dd></dl></a></li>
+						<li class="video-item"><a href="#" class="link"><dl><dt class="module-pic"><img src="/static/img/13.jpg" alt="Be prepared..."></dt><dd><div class="cell"><h4>黄海波道入狱真相，加害者真面目暴露，王杰也坐不住了</h4><p><span>2478次播放&nbsp;</span><span>&nbsp;21评论</span></p></div></dd></dl></a></li>
+						<li class="video-item"><a href="#" class="link"><dl><dt class="module-pic"><img src="/static/img/13.jpg" alt="Be prepared..."></dt><dd><div class="cell"><h4>黄海波道入狱真相，加害者真面目暴露，王杰也坐不住了</h4><p><span>2478次播放&nbsp;</span><span>&nbsp;21评论</span></p></div></dd></dl></a></li>
+					</ul>
+				</div>
+				<div class="pane-module">
+					<div class="module-head">精彩图片</div>
+					<ul class="module-content bui-box picture-list">
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+						<li class="bui-left picture-item"><a href="#" class="link"><div class="module-pic picture-img"><img src="/static/img/8.jpg" alt="Be prepared..."></div><p>没有智能手机的年代，人们怎么自拍？就服最后一位</p></a></li>
+					</ul>
+				</div>
+				<div class="pane-module">
+					<div class="module-head">更多</div>
+					<ul class="more-items-content">
+						<li class="item"><a href="#">关于头条</a></li>
+						<li class="item"><a href="#">加入头条</a></li>
+						<li class="item"><a href="#">媒体报道</a></li>
+						<li class="item"><a href="#">媒体合作</a></li>
+						<li class="item"><a href="#">产品合作</a></li>
+						<li class="item"><a href="#">合作说明</a></li>
+						<li class="item"><a href="#">广告投放</a></li>
+						<li class="item"><a href="#">联系我们</a></li>
+						<li class="item"><a href="#">用户协议</a></li>
+						<li class="item"><a href="#">侵权投诉</a></li>
+						<li class="item"><a href="#">廉洁举报</a></li>
+					</ul>
+				</div>
+				<div class="pane-module">
+					<div class="module-head">友情链接</div>
+					<ul class="friend-links-content">
+						<li class="item"><a href="#">光明网</a></li>
+						<li class="item"><a href="#">央广网</a></li>
+						<li class="item"><a href="#">国际在线</a></li>
+						<li class="item"><a href="#">中国西藏网</a></li>
+						<li class="item"><a href="#">参考消息</a></li>
+						<li class="item"><a href="#">环球网</a></li>
+						<li class="item"><a href="#">中青在线</a></li>
+						<li class="item"><a href="#">中青网</a></li>
+						<li class="item"><a href="#">海外网</a></li>
+						<li class="item"><a href="#">中国网</a></li>
+						<li class="item"><a href="#">未来网</a></li>
+						<li class="item"><a href="#">千龙网</a></li>
+						<li class="item"><a href="#">新京报</a></li>
+						<li class="item"><a href="#">北青网</a></li>
+						<li class="item"><a href="#">法制晚报</a></li>
+						<li class="item"><a href="#">北京晨报</a></li>
+						<li class="item"><a href="#">北京商报</a></li>
+						<li class="item"><a href="#">北京娱乐信报</a></li>
+						<li class="item"><a href="#">奥一网</a></li>
+						<li class="item"><a href="#">金羊网</a></li>
+						<li class="item"><a href="#">华商网</a></li>
+						<li class="item"><a href="#">新民网</a></li>
+						<li class="item"><a href="#">红网</a></li>
+						<li class="item"><a href="#">中国江苏网</a></li>
+						<li class="item"><a href="#">中国江西网</a></li>
+						<li class="item"><a href="#">齐鲁网</a></li>
+						<li class="item"><a href="#">南海网</a></li>
+						<li class="item"><a href="#">安徽网</a></li>
+						<li class="item"><a href="#">河北新闻网</a></li>
+						<li class="item"><a href="#">闽南网</a></li>
+						<li class="item"><a href="#">海峡网</a></li>
+						<li class="item"><a href="#">华声在线</a></li>
+						<li class="item"><a href="#">中国蓝TV</a></li>
+						<li class="item"><a href="#">北国网</a></li>
+						<li class="item"><a href="#">龙虎网</a></li>
+						<li class="item"><a href="#">东莞时间网</a></li>
+						<li class="item"><a href="#">汽车之家</a></li>
+						<li class="item"><a href="#">Onlylady女人志</a></li>
+						<li class="item"><a href="#">中国搜索</a></li>
+						<li class="item"><a href="#">每日经济新闻</a></li>
+						<li class="item"><a href="#">网上车市</a></li>
+						<li class="item"><a href="#">网通社汽车</a></li>
+						<li class="item"><a href="#">北方网</a></li>
+						<li class="item"><a href="#">湖南省旅发委官网</a></li>
+						<li class="item"><a href="#">乐居网</a></li>
+					</ul>
+				</div>
+				<div class="company">
+					<p class="J-company-name"> © 2017 今日头条</p>
+					<a href="#">中国互联网举报中心</a>
+					<a href="#">京ICP证140141号</a>
+					<div>
+						<a href="#">京ICP备12025439号-3</a>
+						<a href="#">网络文化经营许可证</a>
+					</div>
+					<p>京-非经营性-2016-0081</p>
+					<p>互联网药品信息服务资格证书</p>
+					<a href="#">跟帖评论自律管理承诺书</a>
+					<span>违法和不良信息举报：010-58341833</span>
+					<span>公司名称：北京字节跳动科技有限公司</span>
+					<a href="#">
+						<img src="/static/img/9.png">&nbsp;京公网安备 11000002002023号
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="action-feedback">
+		<div class="feedback">
+			<ul>
+				<li class="tool-item update"><a href="#"><img src="/static/img/refresh.png"></a></li>
+				<li class="tool-item"><a href="#"><img src="/static/img/toparrow.png"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+<script src="/static/js/Selfindex.js"></script>
+</html>
+
