@@ -1,6 +1,6 @@
 //验证码
 var code;
-function createCode(){
+function createCode() {
 	code = new Array();
 	var codeLength = 4;
 	var checkCode = document.getElementById("checkCode");
@@ -10,7 +10,7 @@ function createCode(){
 		var charIndex = Math.floor(Math.random()*32);
 		code += selectChar[charIndex];
 	}
-	if (code.length != codeLength){
+	if (code.length != codeLength) {
 		createCode();
 	}
 	checkCode.value = code;
@@ -20,14 +20,14 @@ createCode();
 
 
 //注册表单逻辑
-window.onload = function(){
+window.onload = function() {
 var user = document.getElementById("username");
 var error = document.querySelector(".error-msg");
 var loader = document.querySelector(".action-btn");
 var prcode = document.getElementById("precode");
 var coderror = document.getElementById("coderror");
 var psw = document.getElementById("password");
-loader.onclick = function(){
+loader.onclick = function() {
 	//用户名
 if (user.value == '') {
        error.classList.add("ErrorShow");
@@ -78,7 +78,7 @@ let data = {
 	"username" : userName,
 	"password" : passWord
 }
-xhr.onload = function(){
+xhr.onload = function() {
     var resData = this.responseText;
     window.location.href = "/Selfindex/" + resData;
 }
