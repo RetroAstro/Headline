@@ -23,22 +23,22 @@ new Click({
 
 
 //点赞
-function GiveLike(){
-	var Like = document.querySelector(".like");
-	var LiNum = document.querySelector(".LiNu");
-	var LikeNumber = parseInt(LiNum.innerHTML);
-	Like.onclick = function(){
-		if (Like.getAttribute("src") == "/static/img/likegrey.png") {
-		Like.setAttribute("src","/static/img/likered.png");
-		Like.style.cssText = "transform:scale(1.2);";
-		NewLikeNumber = LikeNumber + 1;
-		LiNum.innerHTML = NewLikeNumber + "&nbsp;";
-	  }else{
-	  	Like.setAttribute("src","/static/img/likegrey.png");
-	    Like.style.cssText = "transform:scale(1);";
-		LiNum.innerHTML = LikeNumber + "&nbsp;";
-	  } 
-	}
+function GiveLike() {
+var Like = document.querySelector(".like");
+var LiNum = document.querySelector(".LiNu");
+var LikeNumber = parseInt(LiNum.innerHTML);
+Like.onclick = function() {
+  if (Like.getAttribute("src") == "/static/img/likegrey.png") {
+	Like.setAttribute("src","/static/img/likered.png");
+	Like.style.cssText = "transform:scale(1.2);";
+	NewLikeNumber = LikeNumber + 1;
+	LiNum.innerHTML = NewLikeNumber + "&nbsp;";
+  }else{
+	Like.setAttribute("src","/static/img/likegrey.png");
+	Like.style.cssText = "transform:scale(1);";
+	LiNum.innerHTML = LikeNumber + "&nbsp;";
+      } 
+   }
 }
 GiveLike();
 
@@ -48,10 +48,10 @@ GiveLike();
 var cTextarea = document.getElementById("TEXTAREA");
 var cAction = document.querySelector(".c-action");
 var inputWrap = document.querySelector(".input-wrap");
-	inputWrap.onclick = function() {
-	cTextarea.style.height = "110px"
-	inputWrap.style.cssText = "padding-top:11px;"
-	cAction.style.cssText = "background:#f4f5f6;cursor:default;"
+inputWrap.onclick = function() {
+ cTextarea.style.height = "110px"
+ inputWrap.style.cssText = "padding-top:11px;"
+ cAction.style.cssText = "background:#f4f5f6;cursor:default;"
 }
 
 
@@ -66,7 +66,7 @@ cSubmit.onclick = function(){
           setTimeout(() => {
           	toast.style.opacity = 0;
         },2500);
-    }else{
+    }else {
 	var output = '';
 	output += `						<li class="c-item">
 							<a href="#" class="avatar-wrap"></a>
@@ -84,7 +84,7 @@ cSubmit.onclick = function(){
 								</div>
 							</div>
 						</li>`;
-	Comments.insertAdjacentHTML("afterBegin",output);
+    Comments.insertAdjacentHTML("afterBegin",output);
     var insertValue = document.getElementById("insertvalue");
     insertValue.innerHTML = cTextarea.value;
     cTextarea.value = null;
