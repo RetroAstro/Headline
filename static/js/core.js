@@ -41,7 +41,7 @@ var lisRight = document.querySelectorAll(".slide-tab-item");
 lisRight[0].classList.add("on");
 var num = 1;
 var flag = null;
-function play(num){
+function play(num) {
 	for (var i = 0; i < lis.length; i++) {
 		lis[i].style.cssText = "opacity:0;position:absolute;z-index:-1;"
 		lisRight[i].className = "slide-tab-item";
@@ -50,27 +50,27 @@ function play(num){
 	lisRight[num].classList.add("on");
 };
 setTimeout(play(0),10);
-function autoPlay(){
+function autoPlay() {
 	flag = setInterval(function(){
-        play(num);
+	play(num);
 		num++
-        if (num >= lis.length){
+	if (num >= lis.length){
 			num = 0;
 		}
 	},3000);
 }
 autoPlay();
 var catelog = document.getElementById('catch');
-catelog.onmouseover = function(){
+catelog.onmouseover = function() {
 	clearInterval(flag);
 	flag = null;
 }
-catelog.onmouseout = function(){
+catelog.onmouseout = function() {
 	autoPlay();
 }
-for (var i = 0; i < lisRight.length; i++){
+for (var i = 0; i < lisRight.length; i++) {
   lisRight[i].index = i;
-  lisRight[i].onmouseover = function(){
+  lisRight[i].onmouseover = function() {
   	num = this.index;
   	play(this.index);
   }
