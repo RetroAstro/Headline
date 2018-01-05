@@ -68,28 +68,28 @@ cSubmit.onclick = function(){
         },2500);
     }else {
 	var output = '';
-	output += `						<li class="c-item">
-							<a href="#" class="avatar-wrap"></a>
-							<div class="c-content">
-								<div class="c-user-info">
-									<a href="#" class="c-user-name">${Username}</a>
-									<span>20 HoursBefore...</span>
-								</div>
-								<p id="insertvalue"></p>
-								<div class="c-footer-action">
-									<span class="c-reply">回复</span>
-									<span class="c-reply-count">&nbsp;~&nbsp;118条回复</span>
-									<span title="点赞" class="bui-right c-digg">
-									<span id="LikeWrap"><span class="LiNu">1188</span>&nbsp;</span><img src="/static/img/likegrey.png" class="like"></span>
-								</div>
-							</div>
-						</li>`;
+	output += `<li class="c-item">
+		      <a href="#" class="avatar-wrap"></a>
+			  <div class="c-content">
+				<div class="c-user-info">
+					<a href="#" class="c-user-name">${Username}</a>
+					<span>20 HoursBefore...</span>
+				</div>
+				<p id="insertvalue"></p>
+				<div class="c-footer-action">
+					<span class="c-reply">回复</span>
+					<span class="c-reply-count">&nbsp;~&nbsp;118条回复</span>
+					<span title="点赞" class="bui-right c-digg">
+					<span id="LikeWrap"><span class="LiNu">1188</span>&nbsp;</span><img src="/static/img/likegrey.png" class="like"></span>
+				</div>
+			  </div>
+		   </li>`;
     Comments.insertAdjacentHTML("afterBegin",output);
     var insertValue = document.getElementById("insertvalue");
     insertValue.innerHTML = cTextarea.value;
     cTextarea.value = null;
     var cItem = document.querySelector(".c-item");
-	GiveLike();
+    GiveLike();
     cItem.classList.add("fadeIn");
   }
 }
