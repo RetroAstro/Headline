@@ -49,9 +49,9 @@ window.onload = function () {
     	mah.style.height = "32px";
     	infinite.style.display = "block";
     },2000);
-	setTimeout(function(){
+    setTimeout(function(){
 		mah.style.height = "0px";
-	},4500)
+    },4500);
 }
 
 
@@ -183,12 +183,12 @@ function Jump() {
   for (var i = 0; i < imgWrap.length; i++) {
     imgWrap[i].addEventListener('click', function() {
       window.location.href = "/news/" + Target;
-    })
+    });
   }
   for (var i = 0; i < link.length; i++) {
     link[i].addEventListener('click', function() {
       window.location.href = "/news/" + Target;
-    })
+    });
   }
 }
 Jump();
