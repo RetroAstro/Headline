@@ -46,7 +46,7 @@ for (let i in elements) {
         if (flag == true) {
             boxs[i].classList.remove("hide");
         }            
- 	 }
+     }
   }   
 }
 
