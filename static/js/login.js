@@ -6,7 +6,7 @@ function createCode() {
 	var checkCode = document.getElementById("checkCode");
 	checkCode.value = "B2TU";
 	var selectChar = new Array(2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');
-	for (var i = 0; i < codeLength; i++){
+	for (var i = 0; i < codeLength; i++) {
 		var charIndex = Math.floor(Math.random()*32);
 		code += selectChar[charIndex];
 	}
@@ -33,7 +33,7 @@ if (user.value == '') {
        error.classList.add("ErrorShow");
        coderror.innerHTML = "您输入的信息不完整！";
    }else{
-   	   error.classList.remove("ErrorShow");
+       error.classList.remove("ErrorShow");
    }
    //验证码
 if (prcode.value != '') {
@@ -43,12 +43,12 @@ if (prcode.value != '') {
 	 return false;
     }
 }else {
-	error.classList.add("ErrorShow");
+	 error.classList.add("ErrorShow");
 }
    //密码
 if (psw.value != '') {
-	  if (!psw.value.match(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/)) {
-		  error.classList.add("ErrorShow");
+    if (!psw.value.match(/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,20}$/)) {
+	  error.classList.add("ErrorShow");
 	  coderror.innerHTML = "密码只能由6位以上数字和字母组成！";
 	  createCode();
 	}
