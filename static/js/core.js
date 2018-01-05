@@ -24,9 +24,9 @@ new Click({
 function  Deletenews() {
   var actionDislike = document.querySelectorAll(".action-dislike");
   for (let i = 0; i < actionDislike.length; i++) {
-    actionDislike[i].onclick = function(){
+    actionDislike[i].onclick = function() {
     actionDislike[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.opacity = "0";
-    setTimeout(function(){
+    setTimeout(function() {
     actionDislike[i].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.style.display = "none";
     },500)
     }
@@ -54,8 +54,8 @@ function autoPlay() {
 	flag = setInterval(function(){
 	play(num);
 		num++
-	if (num >= lis.length){
-			num = 0;
+	if (num >= lis.length) {
+		    num = 0;
 		}
 	},3000);
 }
